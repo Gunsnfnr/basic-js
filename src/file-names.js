@@ -21,8 +21,6 @@ function renameFiles(names) {
     if (resArr.includes(element)) {
       let copyElement = element + '(1)';
       if (resArr.includes(copyElement)) {
-        const regex = /\(\d{1,}\)$/;
-        const ending = copyElement.match(regex);
         const index = copyElement.slice(copyElement.indexOf('(') + 1, copyElement.indexOf(')'));
         copyElement = element + '(' + (+index + 1) + ')';
         resArr.push(copyElement);
