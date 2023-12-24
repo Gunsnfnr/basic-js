@@ -24,7 +24,6 @@ function renameFiles(names) {
         const index = copyElement.slice(copyElement.indexOf('(') + 1, copyElement.indexOf(')'));
         copyElement = element + '(' + (+index + 1) + ')';
         resArr.push(copyElement);
-        // }
       } else {
         resArr.push(copyElement);
       }
