@@ -11,8 +11,6 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function encodeLine(str) {
-  // throw new NotImplementedError('Not implemented');
-
   let result = '';
   let acc = '';
   let currQuantity = 1;
@@ -32,7 +30,6 @@ function encodeLine(str) {
   }
 
   return result;
-  console.log('result: ', result);
 }
 
 
